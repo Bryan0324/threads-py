@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "threads-py"
+version = "0.1.3"
+description = "Unofficial convenient Python client scaffold for the Meta Threads API"
+readme = "README.md"
+authors = [{ name = "grass_cat", email = "hihi.2st@gmail.com" }]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "httpx>=0.26",
+]
+
+[project.urls]
+Homepage = "https://github.com/Bryan0324/threads-py"
+Repository = "https://github.com/Bryan0324/threads-py"
+Documentation = "https://github.com/Bryan0324/threads-py#readme"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/threads_py"]
+
+[tool.hatch.build.targets.editable]
+packages = ["src/threads_py"]
